@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.glassdoor.com/l/01/ba/8f/bf/open-theatre.jpg');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: rgba(33, 33, 33, 0.9);
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f4c20d;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #444;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    background-color: #444;
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"]:focus {
+    outline: none;
+    border-color: #f4c20d;
+}
+.result {
+    text-align: center;
+}
+button {
+    background-color: greenyellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #ffc107;
+}
+#tgpaResult {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.pass, .fail {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: default;
+}
+.pass {
+    background-color: green;
+    color: white;
+}
+.fail {
+    background-color: red;
+    color: white;
+}
+
+.button-32 {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}

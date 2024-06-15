@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGPA Calculator - Semester 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TGPA Calculator - Semester 2</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Credits</th>
+                    <th>Attendance Marks</th>
+                    <th>CA Marks</th>
+                    <th>Mid Term Marks</th>
+                    <th>End Term Marks</th>
+                    <th>Total Marks</th>
+                    <th>Letter Grade</th>
+                    <th>Grade Points</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ENGINEERING GRAPHICS AND DIGITAL FABRICATION</td>
+                    <td>4</td>
+                    <td><input type="number" id="egdf_att" min="0" max="5"></td>
+                    <td><input type="number" id="egdf_ca" min="0" max="25"></td>
+                    <td><input type="number" id="egdf_mid" min="0" max="20"></td>
+                    <td><input type="number" id="egdf_end" min="0" max="50"></td>
+                    <td><span id="egdf_total"></span></td>
+                    <td><span id="egdf_grade"></span></td>
+                    <td><span id="egdf_points"></span></td>
+                    <td><span id="egdf_result"></span></td>
+                </tr>
+                <tr>
+                    <td>DISCRETE MATHEMATICS</td>
+                    <td>3</td>
+                    <td><input type="number" id="dm_att" min="0" max="5"></td>
+                    <td><input type="number" id="dm_ca" min="0" max="25"></td>
+                    <td><input type="number" id="dm_mid" min="0" max="20"></td>
+                    <td><input type="number" id="dm_end" min="0" max="35"></td>
+                    <td><span id="dm_total"></span></td>
+                    <td><span id="dm_grade"></span></td>
+                    <td><span id="dm_points"></span></td>
+                    <td><span id="dm_result"></span></td>
+                </tr>
+                <tr>
+                    <td>COMMUNICATION SKILLS-I</td>
+                    <td>3</td>
+                    <td><input type="number" id="cs1_att" min="0" max="15"></td>
+                    <td><input type="number" id="cs1_ca" min="0" max="30"></td>
+                    <td><input type="number" id="cs1_mid" min="0" max="15"></td>
+                    <td><input type="number" id="cs1_end" min="0" max="40"></td>
+                    <td><span id="cs1_total"></span></td>
+                    <td><span id="cs1_grade"></span></td>
+                    <td><span id="cs1_points"></span></td>
+                    <td><span id="cs1_result"></span></td>
+                </tr>
+                <tr>
+                    <td>ENGINEERING PHYSICS</td>
+                    <td>3</td>
+                    <td><input type="number" id="ep_att" min="0" max="5"></td>
+                    <td><input type="number" id="ep_ca" min="0" max="25"></td>
+                    <td><input type="number" id="ep_mid" min="0" max="20"></td>
+                    <td><input type="number" id="ep_end" min="0" max="50"></td>
+                    <td><span id="ep_total"></span></td>
+                    <td><span id="ep_grade"></span></td>
+                    <td><span id="ep_points"></span></td>
+                    <td><span id="ep_result"></span></td>
+                </tr>
+                <tr>
+                    <td>COMPUTER PROGRAMMING</td>
+                    <td>4</td>
+                    <td><input type="number" id="cp_att" min="0" max="5"></td>
+                    <td><input type="number" id="cp_ca" min="0" max="50"></td>
+                    <td><input type="number" id="cp_mid" min="0" max="0" disabled></td>
+                    <td><input type="number" id="cp_end" min="0" max="45"></td>
+                    <td><span id="cp_total"></span></td>
+                    <td><span id="cp_grade"></span></td>
+                    <td><span id="cp_points"></span></td>
+                    <td><span id="cp_result"></span></td>
+                </tr>
+                <tr>
+                    <td>ORIENTATION TO COMPUTING</td>
+                    <td>2</td>
+                    <td><input type="number" id="oc_att" min="0" max="20"></td>
+                    <td><input type="number" id="oc_ca" min="0" max="50"></td>
+                    <td><input type="number" id="oc_mid" min="0" max="0" disabled></td>
+                    <td><input type="number" id="oc_end" min="0" max="30"></td>
+                    <td><span id="oc_total"></span></td>
+                    <td><span id="oc_grade"></span></td>
+                    <td><span id="oc_points"></span></td>
+                    <td><span id="oc_result"></span></td>
+                </tr>
+                <tr>
+                    <td>SOFTWARE ENGINEERING</td>
+                    <td>3</td>
+                    <td><input type="number" id="se_att" min="0" max="5"></td>
+                    <td><input type="number" id="se_ca" min="0" max="25"></td>
+                    <td><input type="number" id="se_mid" min="0" max="20"></td>
+                    <td><input type="number" id="se_end" min="0" max="50"></td>
+                    <td><span id="se_total"></span></td>
+                    <td><span id="se_grade"></span></td>
+                    <td><span id="se_points"></span></td>
+                    <td><span id="se_result"></span></td>
+                </tr>
+                <tr>
+                    <td>DATABASE MANAGEMENT SYSTEM</td>
+                    <td>4</td>
+                    <td><input type="number" id="dbms_att" min="0" max="5"></td>
+                    <td><input type="number" id="dbms_ca" min="0" max="50"></td>
+                    <td><input type="number" id="dbms_mid" min="0" max="0" disabled></td>
+                    <td><input type="number" id="dbms_end" min="0" max="45"></td>
+                    <td><span id="dbms_total"></span></td>
+                    <td><span id="dbms_grade"></span></td>
+                    <td><span id="dbms_points"></span></td>
+                    <td><span id="dbms_result"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <div class="result">
+            <button onclick="calculateTGPA()">Calculate TGPA</button>
+            <p id="tgpaResult"></p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
